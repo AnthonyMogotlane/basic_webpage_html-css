@@ -12,6 +12,12 @@ body {
   margin-bottom: 100px;
 }
 
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title {
   text-align: center;
   font-size: 1.6em;
@@ -32,6 +38,7 @@ body {
   margin-bottom: 70px;
 }
 
+
 li {
   list-style: none;
   margin: 10px;
@@ -45,7 +52,6 @@ i {
 /* home style */
 .home-page {
   background-image: url(./img/clouds.jpg);
-  /* background: grey; */
   background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: cover;
@@ -98,21 +104,16 @@ i {
 }
 /* ..................................................................... */
 /* city style */
-.city {
-  max-width: 900px;
-  margin: 0 auto;
-}
 
 .city-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   justify-items: center;
   align-items: center;
-  margin: 0px 20px 0 20px;
 }
 
 .city-img {
-  justify-self: end;
+  justify-self: center;
   margin-right: 15px;
 }
 
@@ -126,6 +127,7 @@ i {
 .city-desc {
   border-left: solid black 1px;
   padding-left: 15px;
+  justify-self: start;
 }
 
 .city-desc h4, p{
@@ -137,9 +139,6 @@ i {
 
 /* ..................................................................... */
 /* language style */
-.language {
-  margin: 0 40px;
-}
 
 .translation {
   display: flex;
@@ -152,7 +151,6 @@ i {
 }
 
 .swahili {
-  width: 700px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 20px 0 black;
@@ -162,14 +160,15 @@ i {
   font-weight: bold
 }
 
-table {
-  width: 700px;
+.table, table {
+  width: 100%;
 }
 
 table, th, td {
   border-collapse: collapse;
   font-weight: bold;
 }
+
 td {
   font-weight: 400;
 }
@@ -193,11 +192,6 @@ th, td {
 
 /* ..................................................................... */
 /* historical places */
-.historical {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .historical img{
   height: 250px;
   width: 100%;
@@ -241,8 +235,8 @@ th, td {
 .place p {
   padding: 10px;
 }
-
 /* ..................................................................... */
+
 
 /* Media quaries */
 /* tablets & mobile */
@@ -267,6 +261,10 @@ th, td {
 
   /* ..................................................................... */
   /* City */
+  .city {
+    margin: 0 40px;
+  }
+
   .city-content {
     grid-template-columns: 1fr;
   }
@@ -287,12 +285,16 @@ th, td {
   .city-desc {
     border-left: none;
     padding-left: 0px;
-    border-top: solid black /* border: solid black 1px; */ 1px;
+    border-top: solid black 1px;
     padding-top: 10px;
   }
 
   /* ..................................................................... */
   /* language style */
+
+  .language {
+    margin: 0 40px;
+  }
   
   .translation {
     display: flex;
