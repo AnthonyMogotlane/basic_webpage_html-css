@@ -79,15 +79,16 @@ i {
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  /* column-gap: 50px; */
   color: yellow;
   z-index: 1;
   margin: 0 20px;
 }
 
 .home-name {
-  font-size: 25px;
+  font-size: 21px;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .home-img {
@@ -110,6 +111,7 @@ i {
   grid-template-columns: 1fr 3fr;
   justify-items: center;
   align-items: center;
+  margin: 0 20px;
 }
 
 .city-img {
@@ -148,6 +150,7 @@ i {
   max-width: 1000px;
   margin: auto;
   letter-spacing: .7px;
+  margin: 0 20px
 }
 
 .swahili {
